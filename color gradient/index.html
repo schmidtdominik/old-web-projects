@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<script src="jscolor.js"></script>
+		<style>
+			body {
+				text-align: center;
+				padding: 0;
+				margin: 0;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				font-family: "Fira Sans", Tahoma, Geneva, sans-serif !important;
+			}
+			#maincanvas {
+				margin-bottom: 1.2rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<canvas id="a" width="500" height="300"></canvas><br>
+			<canvas id="maincanvas" width="1300" height="200"></canvas><br>
+			<div>
+				<button class="jscolor {valueElement:null, onFineChange:'updateColor0(this)', value:'00ffff'}">
+					Pick first color
+				</button>
+
+				<button class="jscolor {valueElement:'x', onFineChange:'updateColor1(this)', value:'ff00ff'}">
+					Pick second color
+				</button>
+			</div>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
