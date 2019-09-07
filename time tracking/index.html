@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>100%</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="percentage">100%</div>
+            <div id="timeWrapper">
+                <span id="hourglass">&#x29D7;</span>
+                <span onclick="startTimer(0, 15);" class="timeSetter" id="time1">+15m</span>
+                <span onclick="startTimer(0, 30);" class="timeSetter" id="time1">+30m</span>
+                <span onclick="startTimer(1, 0);" class="timeSetter" id="time2">+1h</span>
+                <span onclick="startTimer(2, 0);" class="timeSetter" id="time3">+2h</span>
+                <span onclick="startTimer(3, 0);" class="timeSetter" id="time3">+3h</span>
+                <span onclick="startTimer(4, 0);" class="timeSetter" id="time3">+4h</span>│
+                <input id="startH" type="number" placeholder="h">
+                <input id="startM" type="number" placeholder="m">
+            </div>
+            <textarea></textarea>
+        </div>
+        <input id="digits" type="number" placeholder="digits"">
+        <input id="showRemaining" type="checkbox">
+        <!--/span id="quote">"Oops, this super crazy inspirational quote isn't loading. Make sure you have Javascript enabled!"</span>-->
+    </body>
+    <script>
+        n = 1+Math.floor(Math.random()*10)
+        document.getElementsByTagName("html")[0].style.backgroundImage = "url(./images/" + n.toString() + ".jpg)";
+
+        /*function setTimeToCurrentPlus(plusHours, plusMinutes) {
+            var date = new Date();
+            date.setHours(date.getHours()+plusHours);
+            date.setMinutes(date.getMinutes()+plusMinutes);
+
+            time = date.toTimeString().split(' ')[0].split(':');
+            s = time[0] + ':' + time[1];
+
+            document.getElementById('toTime').value = s;
+            updatePercentage();
+        }
+
+        setTimeToCurrentPlus(0, 0);
+
+        toTime = document.getElementById('toTime');
+
+        fromTime.addEventListener('input', updatePercentage);
+        toTime.addEventListener('input', updatePercentage);*/
+
+        start = 0;
+        timeDelta = 0;
+        interval = -1;
+
+        function startTimer(hours, minutes) {
+            document.getElementById("startH").value = hours;
+            document.getElementById("startM").value = minutes;
+            clearInterval(interval)
+            start = + new Date()
+            timeDelta = (hours*60+minutes)*60*1000;
+
+            interval = setInterval(updatePercentage, 50);
+        }
+
+        function updatePercentage() {
+            elapsed = + new Date() - start;
+            remaining = timeDelta - elapsed;
+            p = elapsed/timeDelta*100;
+            if (document.getElementById('showRemaining').checked) {
+                p = remaining/timeDelta*100;
+            }
+            digits = document.getElementById('digits').value;
+            if (digits == NaN) {
+                digits = 0;
+            }
+            document.title = Math.floor(p*Math.pow(10, digits))/Math.pow(10, digits) + "%";
+            document.getElementById('percentage').innerHTML = Math.floor(p*Math.pow(10, digits))/Math.pow(10, digits) + "%";
+        }
+
+        function startFromInput(e) {
+            if (e.keyCode === 13) { // enter key
+                startTimer(document.getElementById("startH").value, document.getElementById("startM").value);
+            }
+        }
+
+        document.getElementById("startH").addEventListener("keydown", startFromInput);
+        document.getElementById("startM").addEventListener("keydown", startFromInput);
+    </script>
+</html>

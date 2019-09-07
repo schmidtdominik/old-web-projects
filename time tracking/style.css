@@ -1,0 +1,114 @@
+html { 
+  background: url(./images/5.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body, input {
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', Serif;
+	color: white;
+}
+
+#wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: left;
+	align-items: left;
+	margin-left: 100px;
+}
+
+#percentage {
+	width: 500px;
+	color: white;
+	font-size: 180px;
+	margin-top: 30vh;
+	text-shadow: 0 0 2px gray;
+}
+
+/*input {
+	background-color: none;
+	background-color: rgba(0, 0, 0, 0);
+    border: none;
+    border-radius: 1px;
+    outline: none;
+    font-size: 24px;
+}
+
+input:focus {
+	outline: 1px solid white;
+}
+
+#minutes {
+	width: 120px;
+}
+
+#hours {
+	width: 90px;
+}*/
+
+.timeSetter {
+	margin: 0 8px;
+	font-size: 20px;
+	text-shadow: 0 0 2px rgb(50, 50, 50);
+}
+
+#hourglass {
+	margin-right: 10px;
+	font-size: 30px;
+}
+
+/*#quote {
+	font-family: 'Libre Baskerville', Serif;
+	position: absolute;
+	bottom: 10px; 
+	max-width: 500px; 
+    font-size: 14px;
+    text-shadow: 0 0 1px rgb(50, 50, 50);
+}*/
+
+#startH, #startM {
+	outline: none;
+	border: none;
+	max-width: 37px;
+	background-color: rgba(0, 0, 0, 0);
+	font-size: 20px;
+}
+
+#startH {
+	margin-left: 0.5em;
+}
+
+#digits {
+	outline: none;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	width: 50px;
+	position: absolute;
+	bottom: 9px;
+	left: 32px;
+}
+
+#showRemaining {
+	position: absolute;
+	bottom: 10px;
+	left: 10px;
+}
+
+textarea {
+	height: 12em;
+	width: 25em;
+	background-color: rgba(0, 0, 0, 0);
+	outline: none;
+	border: none;
+	color: white;
+	margin-top: 3em;
+	font-size: 18px;
+}
+
+textarea:focus {
+	border: 1px solid white;
+}
