@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Project X</title>
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div id="text">
+        Project X
+        </div>
+        <div id="button"></div>
+    </body>
+    <script>
+        var attributes = [
+			// Environ
+			"desert", "tundra", "mountain", "space", "field", "urban",
+			// Stealth and cunning
+			"hidden", "covert", "uncanny", "scheming", "decisive", "cunning",
+			// Volitility
+			"rowdy", "dangerous", "explosive", "threatening", "warring",
+			// Needs correction
+			"bad", "unnecessary", "unknown", "unexpected", "waning",
+			// Organic Gems and materials
+			"amber", "bone", "coral", "ivory", "jet", "nacre", "pearl", "obsidian", "glass",
+			// Regular Gems
+			"agate", "beryl", "diamond", "opal", "ruby", "onyx", "sapphire", "emerald", "jade",
+			// Colors
+			"red", "orange", "yellow", "green", "blue", "violet",
+      "dark", "bright", "deep"
+		]
+
+		var objects = [
+			// Large cats
+			"panther", "wildcat", "tiger", "lion", "cheetah", "cougar", "leopard",
+			// Snakes
+			"viper", "cottonmouth", "python", "boa", "sidewinder", "cobra",
+			// Other predators
+			"grizzly", "jackal", "falcon",
+			// Prey
+			"wildabeast", "gazelle", "zebra", "elk", "moose", "deer", "stag", "pony",
+			// Occupations
+			"nomad", "wizard", "cleric", "pilot",
+			// Technology
+			"mainframe", "device", "motherboard", "network", "transistor", "packet", "robot", "android", "cyborg",
+			// Sea life
+			"octopus", "lobster", "crab", "barnacle", "hammerhead", "orca", "piranha",
+			// Weather
+			"storm", "thunder", "lightning", "rain", "hail", "sun", "drought", "snow",
+			// Other
+			"warning", "presence", "weapon", "solitude", "aurora", "euphoria", "sequoia"
+		]
+
+		function capit(str){
+		    return str.charAt(0).toUpperCase() + str.substring(1);
+		}
+
+		function gen() {
+			s = 'Project ' +capit(attributes[Math.floor(Math.random() * attributes.length)]) + " " + capit(objects[Math.floor(Math.random() * objects.length)])
+      j = attributes[Math.floor(Math.random() * attributes.length)] + '-' + objects[Math.floor(Math.random() * objects.length)]
+
+			document.getElementById('text').innerText = s;
+
+			if (s.length > 25) {
+				document.getElementById('text').style.fontSize = '60px';
+			} else if (s.length > 20) {
+				document.getElementById('text').style.fontSize = '70px';
+			} else if (s.length > 15) {
+				document.getElementById('text').style.fontSize = '80px';
+			} else {
+				document.getElementById('text').style.fontSize = '100px';
+			}
+		}
+
+		document.getElementById('button').addEventListener('click', gen)
+    </script>
+</html>

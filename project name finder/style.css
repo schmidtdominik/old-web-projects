@@ -1,0 +1,38 @@
+::selection {
+	background: rgba(0,0,0,0.87); /* WebKit/Blink Browsers */
+	color: #FFEB3B;
+}
+::-moz-selection {
+	background: rgba(0,0,0,0.87); /* Gecko Browsers */
+	color: #FFEB3B;
+}
+
+#text, #text1 {
+	text-align: center;
+	font-family: 'Libre Baskerville', Serif;
+	font-size: 90px;
+	line-height: 97vh;
+	color: rgba(0,0,0,0.87);
+}
+
+body {
+	background-color: #FFEB3B;
+}
+
+#button {
+	width: 25px;
+	height: 25px;
+	border: 5px solid black;
+	border-radius: 1000px;
+	position: absolute;
+	bottom: 33vh;
+	left: 49vw;
+
+	transition: background-color 0.15s ease-in;
+	background-color: #FFEB3B;
+}
+
+#button:hover {
+	transition: background-color 0.15s ease-out;
+	background-color: black;
+}
