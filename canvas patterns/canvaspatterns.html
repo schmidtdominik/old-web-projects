@@ -5,8 +5,9 @@
     </head>
     <body>
         <canvas id="canvas" width="650" height="650">Sorry your browser does not support HTML5 canvas</canvas><br>
-        <button onclick="p=0">Reset</button><br>
-        Resolution (don't change): <input type="range" min="2" max="9" value="4" oninput="res=parseInt(this.value)"><br>
+        <h2>Settings</h2><hr>
+        <button onclick="setFunction(1)">Reset</button><br>
+        Resolution: <input type="range" min="2" max="9" value="4" oninput="res=parseInt(this.value)"><br>
         Set drawing function: <select id="fun" onchange="setFunction(this.value)">
           <option value="1">1</option>
           <option value="2">2</option>
