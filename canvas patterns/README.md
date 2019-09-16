@@ -10,7 +10,5 @@
 ![6](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/6.png)
 ![7](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/7.png)
 ![8](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/8.png)
-![9](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/9.png)
-![10](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/10.png)
 ![11](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/11.png)
 ![12](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/12.png)
