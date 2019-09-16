@@ -1,0 +1,16 @@
+# html5 canvas patterns (2016)
+
+[Open live demo here](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/canvaspatterns.html)
+
+![1](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/1.png)
+![2](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/2.png)
+![3](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/3.png)
+![4](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/4.png)
+![5](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/5.png)
+![6](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/6.png)
+![7](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/7.png)
+![8](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/8.png)
+![9](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/9.png)
+![10](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/10.png)
+![11](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/11.png)
+![12](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/12.png)
