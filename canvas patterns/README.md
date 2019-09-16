@@ -1,6 +1,6 @@
 # html5 canvas patterns (2016)
 
-[Open live demo here](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/canvaspatterns.html)
+## [Open live demo here](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/canvaspatterns.html)
 
 ![1](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/1.png)
 ![2](https://dominikschmidt.xyz/old-web-projects/canvas%20patterns/examples/2.png)
