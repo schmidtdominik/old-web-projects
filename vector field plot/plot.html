@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<style>
+			h1 {
+				font-family: sans-serif;
+				margin-top: 3rem;
+			}
+			canvas {
+				border: 2px solid rgba(200, 90, 90, 0.1);
+				border-radius: 3px;
+				margin-top: 1.6rem;
+			}
+			body {
+				text-align: center;
+				padding: 0;
+				margin: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>Vector Field Plotter</h1>
+		<span>Click anywhere to place a simulated particle.</span><br>
+		<canvas id="maincanvas" width="700" height="700"></canvas>
+		<script src="script.js"></script><br><br>
+		Set function: <select id="fun" onchange="setFunction(parseInt(this.value))">
+			<option value="1">1</option>
+			<option value="2">2</option>
+			<option value="3">3</option>
+			<option value="4">4</option>
+			<option value="5">5</option>
+			<option value="6">6</option>
+			<option value="7">7</option>
+			<option value="8">8</option>
+			<option value="9">9</option>
+		</select><br>
+		Show vectors: <input type="checkbox" class="checkboxc" onchange="setShowVectors(this.checked)">
+	</body>
+</html>
