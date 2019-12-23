@@ -1,6 +1,6 @@
 # old-web-projects
 
-A collection of some _really_ old tiny web projects
+A collection of some tiny old web projects
 
 [voronoi diagram](https://dominikschmidt.xyz/old-web-projects/voronoi%20diagram)  
 [vector field plot](https://dominikschmidt.xyz/old-web-projects/vector%20field%20plot)  
