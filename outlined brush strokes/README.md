@@ -1,6 +1,6 @@
 # Outlined Brush Strokes
 
-## [Open here](https://dominikschmidt.xyz/old-web-projects/outlined%20brush%20strokes/index.html)
+## [Open here](https://dominikschmidt.xyz/old-web-projects/outlined%20brush%20strokes/exp.html)
 
 ![1](https://dominikschmidt.xyz/old-web-projects/outlined%20brush%20strokes/snap1.png)
 ![2](https://dominikschmidt.xyz/old-web-projects/outlined%20brush%20strokes/snap2.png)
