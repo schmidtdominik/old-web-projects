@@ -56,14 +56,14 @@ function getClosestNode(x, y) {
 	for (var i = nodes.length - 1; i >= 0; i--) {
 		if (Math.random() < randomness) {continue}
 		if (lxnorm == 2) {
-			seperation = Math.sqrt(Math.pow(nodes[i][0]-x, 2) + Math.pow(nodes[i][1]-y, 2))
+			separation = Math.sqrt(Math.pow(nodes[i][0]-x, 2) + Math.pow(nodes[i][1]-y, 2))
 		} else {
-				seperation = Math.pow(Math.pow(nodes[i][0]-x, lxnorm) + Math.pow(nodes[i][1]-y, lxnorm), 1/lxnorm)
+				separation = Math.pow(Math.pow(nodes[i][0]-x, lxnorm) + Math.pow(nodes[i][1]-y, lxnorm), 1/lxnorm)
 		}
 
-		if (seperation < closestNodeSeperation) {
+		if (separation < closestNodeSeperation) {
 			closestNode = nodes[i]
-			closestNodeSeperation = seperation
+			closestNodeSeperation = separation
 		}
 	}
 	return closestNode

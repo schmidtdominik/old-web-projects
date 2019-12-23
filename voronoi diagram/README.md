@@ -8,4 +8,4 @@
 ![4](https://dominikschmidt.xyz/old-web-projects/voronoi%20diagram/examples/4.png)  
 ![5](https://dominikschmidt.xyz/old-web-projects/voronoi%20diagram/examples/5.png)  
 ![6](https://dominikschmidt.xyz/old-web-projects/voronoi%20diagram/examples/6.png)  
-![7](https://dominikschmidt.xyz/old-web-projects/voronoi%20diagram/examples/7.png)  
+![7](https://dominikschmidt.xyz/old-web-projects/voronoi%20diagram/examples/7.png)

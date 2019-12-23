@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<meta>
+		<style>
+			* { margin: 0; padding: 0;}
+
+			body, html { height:100%; }
+			input {
+				width: 300px;
+			}
+			body {
+				text-align: center;
+				font-size: 40px;
+			}
+			canvas {
+				display: block;
+				margin: auto;
+			}
+		</style>
+	</meta>
+	<body>
+		<canvas id="canvas" width="800" height="800" style="border:1px solid #000000;"></canvas>
+		<input id="rangek" type="range" min="0" max="24" value="7"/>
+		<span id="k">-1</span>
+		<input id="rangea" type="range" min="0" max="600" value="300"/>
+		<span id="a">-1</span>
+		<input id="rangeb" type="range" min="0" max="600" value="300"/>
+		<span id="b">-1</span>
+		<script src="script.js"></script>
+	</body>
+</html>
